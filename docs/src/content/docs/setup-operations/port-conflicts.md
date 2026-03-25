@@ -124,7 +124,7 @@ netsh advfirewall firewall add rule
 ```
 
 :::danger
-Only add firewall rules for localhost access. Never open Tally's port to external network traffic. See [Security Hardening](/tally-integartion/setup-operations/security-hardening/) for why.
+Only add firewall rules for localhost access. Never open Tally's port to external network traffic. See [Security Hardening](/tally-integration/setup-operations/security-hardening/) for why.
 :::
 
 ## Common Port Conflicts

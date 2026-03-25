@@ -61,7 +61,7 @@ Excel's Microsoft Query feature can connect directly to Tally's ODBC interface. 
 
 3. **Select Tables**: You'll see Tally's available collections (Ledger, StockItem, Voucher, etc.)
 
-4. **Write Query**: Use Tally's SQL syntax (see [SQL Queries](/tally-integartion/odbc-interface/sql-queries/))
+4. **Write Query**: Use Tally's SQL syntax (see [SQL Queries](/tally-integration/odbc-interface/sql-queries/))
 
 5. **Import**: Data flows into your Excel sheet
 
@@ -178,5 +178,5 @@ For security, we recommend keeping ODBC on localhost only and using the HTTP API
 
 ## Next Steps
 
-- [SQL Queries](/tally-integartion/odbc-interface/sql-queries/) -- learn Tally's SQL dialect with the `$` prefix
-- [Limitations](/tally-integartion/odbc-interface/limitations/) -- what ODBC can't do (and when to use the HTTP API instead)
+- [SQL Queries](/tally-integration/odbc-interface/sql-queries/) -- learn Tally's SQL dialect with the `$` prefix
+- [Limitations](/tally-integration/odbc-interface/limitations/) -- what ODBC can't do (and when to use the HTTP API instead)

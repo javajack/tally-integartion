@@ -88,9 +88,9 @@ When pulling voucher data, always fetch the header first, then hydrate the sub-t
 
 Dive into each table in detail:
 
-1. [Voucher Header](/tally-integartion/data-model-transactions/voucher-header/) -- the foundation of every transaction
-2. [Accounting Entries](/tally-integartion/data-model-transactions/accounting-entries/) -- where the money flows
-3. [Inventory Entries](/tally-integartion/data-model-transactions/inventory-entries/) -- where the stock moves
-4. [Batch Allocations](/tally-integartion/data-model-transactions/batch-allocations/) -- expiry dates, manufacturing dates, pharma compliance
-5. [Bill Allocations](/tally-integartion/data-model-transactions/bill-allocations/) -- receivables, payables, aging
-6. [Cost Centre & Bank](/tally-integartion/data-model-transactions/cost-centre-bank/) -- salesman tracking and cheque details
+1. [Voucher Header](/tally-integration/data-model-transactions/voucher-header/) -- the foundation of every transaction
+2. [Accounting Entries](/tally-integration/data-model-transactions/accounting-entries/) -- where the money flows
+3. [Inventory Entries](/tally-integration/data-model-transactions/inventory-entries/) -- where the stock moves
+4. [Batch Allocations](/tally-integration/data-model-transactions/batch-allocations/) -- expiry dates, manufacturing dates, pharma compliance
+5. [Bill Allocations](/tally-integration/data-model-transactions/bill-allocations/) -- receivables, payables, aging
+6. [Cost Centre & Bank](/tally-integration/data-model-transactions/cost-centre-bank/) -- salesman tracking and cheque details

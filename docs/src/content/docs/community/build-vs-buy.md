@@ -227,8 +227,8 @@ Many teams start by buying, then migrate to hybrid as they understand their need
 
 For most teams, **start hybrid**:
 
-1. Use [tally-database-loader](/tally-integartion/community/tally-database-loader/) to get data flowing immediately
-2. Build your write-back logic in Go or Python using the [language recipes](/tally-integartion/community/language-recipes/)
+1. Use [tally-database-loader](/tally-integration/community/tally-database-loader/) to get data flowing immediately
+2. Build your write-back logic in Go or Python using the [language recipes](/tally-integration/community/language-recipes/)
 3. Only evaluate commercial platforms if you need features you can't build in a reasonable time
 
 This gets you to production fast while keeping your options open.

@@ -88,7 +88,7 @@ The `VOUCHER` element has three critical attributes:
 
 - **DATE**: Format is `YYYYMMDD`. No dashes, no slashes.
 - **VOUCHERTYPENAME**: Must match exactly. If the stockist uses a custom type like "Field Sales Order", use that instead.
-- **VOUCHERNUMBER**: Your unique reference. Use a prefix to avoid collisions (see [Voucher Numbering](/tally-integartion/write-back/voucher-numbering/)).
+- **VOUCHERNUMBER**: Your unique reference. Use a prefix to avoid collisions (see [Voucher Numbering](/tally-integration/write-back/voucher-numbering/)).
 - **PARTYLEDGERNAME**: The customer's ledger name. Must exist in Tally. Case-sensitive.
 - **NARRATION**: Free text. Great for audit trails.
 
@@ -158,7 +158,7 @@ Tax (Cr)    = + 1,800.00
 Total        =      0.00  <-- MUST be zero
 ```
 
-If this doesn't balance to the **paisa**, Tally rejects the voucher with "Voucher totals do not match!" See [Round-Off Handling](/tally-integartion/write-back/round-off-handling/) for dealing with rounding differences.
+If this doesn't balance to the **paisa**, Tally rejects the voucher with "Voucher totals do not match!" See [Round-Off Handling](/tally-integration/write-back/round-off-handling/) for dealing with rounding differences.
 
 ## Inventory Entries
 
@@ -367,6 +367,6 @@ Before using this template, replace **every** name (company, party, stock items,
 
 ## Next Steps
 
-- [Voucher Lifecycle](/tally-integartion/write-back/voucher-lifecycle/) -- how to alter, cancel, and delete vouchers after creation
-- [Pre-Validation](/tally-integartion/write-back/pre-validation/) -- the checklist to run before every push
-- [Import Response](/tally-integartion/write-back/import-response/) -- parsing Tally's response to confirm success
+- [Voucher Lifecycle](/tally-integration/write-back/voucher-lifecycle/) -- how to alter, cancel, and delete vouchers after creation
+- [Pre-Validation](/tally-integration/write-back/pre-validation/) -- the checklist to run before every push
+- [Import Response](/tally-integration/write-back/import-response/) -- parsing Tally's response to confirm success

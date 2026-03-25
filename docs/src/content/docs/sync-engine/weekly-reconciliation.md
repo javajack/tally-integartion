@@ -81,7 +81,7 @@ Mismatches can happen because:
 - Your voucher-based computation diverged from Tally's
 
 :::danger
-**Tally's Stock Summary always wins.** When there's a mismatch, update your cached position from the report. Never trust your own computation over Tally's reported values. See [Stock Position Truth](/tally-integartion/sync-engine/stock-position-truth/).
+**Tally's Stock Summary always wins.** When there's a mismatch, update your cached position from the report. Never trust your own computation over Tally's reported values. See [Stock Position Truth](/tally-integration/sync-engine/stock-position-truth/).
 :::
 
 ## Check 3: Outstanding Order Reconciliation

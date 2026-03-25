@@ -165,7 +165,7 @@ For every batch allocation in every voucher, extract:
 | Amount | `AMOUNT` | `amount` |
 
 :::caution
-The `ACTUALQTY` field contains the unit embedded in the string (e.g., "100 Strip"). You need to parse out the numeric value. See the [parsing quantities](/tally-integartion/parsing-responses/parsing-quantities/) section for details on quantity string parsing.
+The `ACTUALQTY` field contains the unit embedded in the string (e.g., "100 Strip"). You need to parse out the numeric value. See the [parsing quantities](/tally-integration/parsing-responses/parsing-quantities/) section for details on quantity string parsing.
 :::
 
 ## Edge Cases to Watch

@@ -6,7 +6,7 @@ import starlightLinksValidator from 'starlight-links-validator';
 
 export default defineConfig({
   site: 'https://javajack.github.io',
-  base: '/tally-integartion',
+  base: '/tally-integration',
   integrations: [
     starlight({
       title: 'Tally Integration Guide',
@@ -22,7 +22,7 @@ export default defineConfig({
         Footer: './src/components/Footer.astro',
       },
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/javajack/tally-integartion' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/javajack/tally-integration' },
         { icon: 'x.com', label: 'X / Twitter', href: 'https://x.com/webiyo' },
         { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/rakeshwaghela' },
       ],
@@ -30,7 +30,7 @@ export default defineConfig({
         // --- Open Graph ---
         {
           tag: 'meta',
-          attrs: { property: 'og:image', content: 'https://javajack.github.io/tally-integartion/og-image.svg' },
+          attrs: { property: 'og:image', content: 'https://javajack.github.io/tally-integration/og-image.svg' },
         },
         {
           tag: 'meta',
@@ -102,7 +102,7 @@ export default defineConfig({
               {
                 '@type': 'WebSite',
                 name: 'Tally Integration Guide',
-                url: 'https://javajack.github.io/tally-integartion/',
+                url: 'https://javajack.github.io/tally-integration/',
                 description:
                   'The complete developer guide to parsing XML and integrating with TallyPrime — from first HTTP request to production sync engine.',
                 inLanguage: 'en',
@@ -118,7 +118,7 @@ export default defineConfig({
                 headline: 'Complete Developer Guide to TallyPrime XML Integration',
                 description:
                   'Comprehensive documentation covering XML-over-HTTP API, data model, sync engine, write-back, edge cases, and real-world patterns for Indian SMB accounting integration.',
-                url: 'https://javajack.github.io/tally-integartion/',
+                url: 'https://javajack.github.io/tally-integration/',
                 author: {
                   '@type': 'Person',
                   name: 'Rakesh Waghela',

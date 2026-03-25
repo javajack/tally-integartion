@@ -195,4 +195,4 @@ The decision usually comes down to two questions:
 Most of these platforms offer free trials or demo periods. Test with your actual Tally data before signing a contract. Pay special attention to how they handle your specific voucher types and custom fields.
 :::
 
-If none of these fit, you might need to [build your own](/tally-integartion/community/build-vs-buy/). But read the decision framework first — it's more work than you think.
+If none of these fit, you might need to [build your own](/tally-integration/community/build-vs-buy/). But read the decision framework first — it's more work than you think.

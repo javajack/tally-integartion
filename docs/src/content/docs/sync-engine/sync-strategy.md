@@ -49,7 +49,7 @@ For a large stockist with 200,000+ vouchers:
 | Network | 500 MB - 2 GB XML |
 
 :::caution
-Full sync on large companies MUST use day-by-day batching. Pulling a full year's vouchers in one request can freeze Tally indefinitely. See [Batching Strategies](/tally-integartion/sync-engine/batching-strategies/).
+Full sync on large companies MUST use day-by-day batching. Pulling a full year's vouchers in one request can freeze Tally indefinitely. See [Batching Strategies](/tally-integration/sync-engine/batching-strategies/).
 :::
 
 ## Incremental Sync
@@ -129,7 +129,7 @@ There are known scenarios where incremental sync can miss things:
 3. **Company restore** -- If the Tally company data is restored from a backup, AlterIDs can go backwards or reset. Your watermark becomes invalid.
 
 :::tip
-This is why weekly reconciliation is non-negotiable. Incremental sync is an optimization. Full sync is the source of truth. See [Weekly Reconciliation](/tally-integartion/sync-engine/weekly-reconciliation/) for how we catch what incremental misses.
+This is why weekly reconciliation is non-negotiable. Incremental sync is an optimization. Full sync is the source of truth. See [Weekly Reconciliation](/tally-integration/sync-engine/weekly-reconciliation/) for how we catch what incremental misses.
 :::
 
 ## Configuration

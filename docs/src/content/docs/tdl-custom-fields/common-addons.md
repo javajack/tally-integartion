@@ -86,7 +86,7 @@ Distributors track sales performance per salesman in one of two ways. The TDL ap
 - `Route` -- delivery route code
 
 :::caution
-Some distributors track salesmen via **Cost Centres** instead of UDFs. Your connector must check both patterns. See the [research notes on the "Salesman as Cost Centre" pattern](/tally-integartion/edge-cases/data-integrity/).
+Some distributors track salesmen via **Cost Centres** instead of UDFs. Your connector must check both patterns. See the [research notes on the "Salesman as Cost Centre" pattern](/tally-integration/edge-cases/data-integrity/).
 :::
 
 ## IMEI / Serial Number Tracking
@@ -129,5 +129,5 @@ You can often guess the addon category from the `.tcp` filename:
 | `eway`, `transport` | Logistics |
 
 :::tip
-Filename detection is a heuristic. Always confirm by running the [UDF Discovery Algorithm](/tally-integartion/tdl-custom-fields/udf-discovery/) to see what actually appears in the XML.
+Filename detection is a heuristic. Always confirm by running the [UDF Discovery Algorithm](/tally-integration/tdl-custom-fields/udf-discovery/) to see what actually appears in the XML.
 :::

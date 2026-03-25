@@ -93,4 +93,4 @@ graph TD
 
 ## Next Steps
 
-Ready to build the actual XML? Head to [Sales Order XML](/tally-integartion/write-back/sales-order-xml/) for the complete template and line-by-line walkthrough.
+Ready to build the actual XML? Head to [Sales Order XML](/tally-integration/write-back/sales-order-xml/) for the complete template and line-by-line walkthrough.

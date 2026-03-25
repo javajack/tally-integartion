@@ -307,7 +307,7 @@ You will see both `FETCH` and `NATIVEMETHOD` used in collection definitions. The
 | `FETCH` | Fetches fields and resolves sub-objects (like `GSTDetails.List`) |
 | `NATIVEMETHOD` | Fetches native (built-in) methods/properties of the object |
 
-In practice, `FETCH` is the simpler choice. Use `NATIVEMETHOD` when you need more control over which specific native properties to include. See the [Inline TDL](/tally-integartion/xml-protocol/inline-tdl/) page for the full breakdown.
+In practice, `FETCH` is the simpler choice. Use `NATIVEMETHOD` when you need more control over which specific native properties to include. See the [Inline TDL](/tally-integration/xml-protocol/inline-tdl/) page for the full breakdown.
 
 ## ISMODIFY Attribute
 
@@ -331,8 +331,8 @@ If a company has thousands of stock items or tens of thousands of vouchers, a si
 - ~5,000 objects per collection export
 - Day-by-day batching for vouchers in large companies
 
-See [Batching Rules](/tally-integartion/xml-protocol/batching-rules/) for strategies on breaking large exports into manageable chunks.
+See [Batching Rules](/tally-integration/xml-protocol/batching-rules/) for strategies on breaking large exports into manageable chunks.
 
 ## What is Next
 
-Collections give you lists of objects. But what if you just need a quick yes/no answer or a single number? That is what [Export/Function](/tally-integartion/xml-protocol/export-function/) is for.
+Collections give you lists of objects. But what if you just need a quick yes/no answer or a single number? That is what [Export/Function](/tally-integration/xml-protocol/export-function/) is for.

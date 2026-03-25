@@ -117,7 +117,7 @@ This module owns all communication with TallyPrime's XML-over-HTTP API.
 **`types.go`** — Go structs mirroring Tally objects. One struct per master type, one per transaction sub-table.
 
 :::caution
-Tally uses two different XML structures depending on whether the voucher was entered in "Invoice View" or "Accounting View." The parser must check for both `ALLLEDGERENTRIES.LIST` and `LEDGERENTRIES.LIST`. See the [edge cases doc](/tally-integartion/architecture/risk-register/) for details.
+Tally uses two different XML structures depending on whether the voucher was entered in "Invoice View" or "Accounting View." The parser must check for both `ALLLEDGERENTRIES.LIST` and `LEDGERENTRIES.LIST`. See the [edge cases doc](/tally-integration/architecture/risk-register/) for details.
 :::
 
 ### `internal/cache/` — Local SQLite

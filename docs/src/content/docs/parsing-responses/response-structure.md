@@ -166,4 +166,4 @@ Indian businesses use Hindi, Gujarati, and other scripts in their data. A stock 
 
 ## What's next
 
-Now that you know what the response envelope looks like, the real work begins: parsing the actual data inside it. And for large responses, you'll need a streaming parser -- which is exactly what the [next page](/tally-integartion/parsing-responses/streaming-parser/) covers.
+Now that you know what the response envelope looks like, the real work begins: parsing the actual data inside it. And for large responses, you'll need a streaming parser -- which is exactly what the [next page](/tally-integration/parsing-responses/streaming-parser/) covers.

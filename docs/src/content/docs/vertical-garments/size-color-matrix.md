@@ -53,7 +53,7 @@ But Tally only gives you a flat list of 15 items with individual stock quantitie
 
 Over the years, garment businesses and TDL developers have evolved four different approaches to manage this chaos. Each approach stores data differently in Tally, and your connector encounters all of them.
 
-The [Four Approaches](/tally-integartion/vertical-garments/four-approaches/) chapter covers each in detail, but here's the quick overview:
+The [Four Approaches](/tally-integration/vertical-garments/four-approaches/) chapter covers each in detail, but here's the quick overview:
 
 | Approach | How It Works | Prevalence |
 |----------|-------------|-----------|
@@ -92,7 +92,7 @@ Stock Group: "Men's Shirts"
 Is "Blue Mountain" a color or a design name? Is "40" a size or a price? Is "PT" an abbreviation? Welcome to real-world garment data.
 
 :::danger
-Name parsing alone is unreliable for matrix reconstruction. Always use the Stock Group hierarchy as the primary design boundary, and treat name parsing as secondary confirmation. See [Variant Detection](/tally-integartion/vertical-garments/variant-detection/) for the recommended algorithm.
+Name parsing alone is unreliable for matrix reconstruction. Always use the Stock Group hierarchy as the primary design boundary, and treat name parsing as secondary confirmation. See [Variant Detection](/tally-integration/vertical-garments/variant-detection/) for the recommended algorithm.
 :::
 
 ## The "Assorted" Wrench

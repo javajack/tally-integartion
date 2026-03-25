@@ -241,4 +241,4 @@ Compare the latest `$AlterId` with your stored watermark. If they differ, someth
 
 ## Next Steps
 
-- [Limitations](/tally-integartion/odbc-interface/limitations/) -- understand what ODBC can't do before you invest too heavily in it
+- [Limitations](/tally-integration/odbc-interface/limitations/) -- understand what ODBC can't do before you invest too heavily in it

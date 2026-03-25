@@ -166,7 +166,7 @@ def detect_variants(items_by_group):
 
 Parsing relies on comprehensive token dictionaries:
 
-**Size tokens** (see [Size Tokens](/tally-integartion/vertical-garments/size-tokens/)):
+**Size tokens** (see [Size Tokens](/tally-integration/vertical-garments/size-tokens/)):
 ```
 Letter: XS, S, M, L, XL, XXL, 2XL-5XL
 Numeric: 26-48 (waist/chest)
@@ -174,7 +174,7 @@ Kids: 1-2Y, 2-3Y, ... 12-14Y
 Special: FS, Free Size, One Size
 ```
 
-**Color tokens** (see [Color Tokens](/tally-integartion/vertical-garments/color-tokens/)):
+**Color tokens** (see [Color Tokens](/tally-integration/vertical-garments/color-tokens/)):
 ```
 Full: Black, Blue, Red, Navy, Maroon...
 Abbreviated: BLK, BLU, RED, NVY, MRN...

@@ -9,7 +9,7 @@ Perfect data is a fantasy. Here's what you'll actually find -- ranked by how oft
 
 | # | Issue | Frequency | Impact | Handling Strategy |
 |---|---|---|---|---|
-| 1 | Duplicate ledgers | Very High | Double-counted outstandings | [Fuzzy dedup](/tally-integartion/real-world-data/party-deduplication/) by GSTIN or name |
+| 1 | Duplicate ledgers | Very High | Double-counted outstandings | [Fuzzy dedup](/tally-integration/real-world-data/party-deduplication/) by GSTIN or name |
 | 2 | Missing GSTIN | Very High | No reliable entity matching | Fall back to fuzzy name matching |
 | 3 | Negative stock | Very High | Incorrect available qty | Accept as valid; don't filter |
 | 4 | Spelling variations | Very High | Item/party matching fails | Case-insensitive fuzzy search |
@@ -29,7 +29,7 @@ Perfect data is a fantasy. Here's what you'll actually find -- ranked by how oft
 
 These appear in **almost every** Tally installation. Your connector must handle them from day one.
 
-**Duplicate Ledgers** -- The same medical shop appears as "Raj Medical", "Raj Medical Store", and "M/s Raj Medical Store, Ahmedabad". Three ledgers, one business. See [Party Deduplication](/tally-integartion/real-world-data/party-deduplication/).
+**Duplicate Ledgers** -- The same medical shop appears as "Raj Medical", "Raj Medical Store", and "M/s Raj Medical Store, Ahmedabad". Three ledgers, one business. See [Party Deduplication](/tally-integration/real-world-data/party-deduplication/).
 
 **Missing GSTIN** -- Small medical shops, especially in rural areas, are often unregistered. No GSTIN means no reliable identifier. Fuzzy name matching is your only option.
 

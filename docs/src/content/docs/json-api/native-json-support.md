@@ -308,5 +308,5 @@ JSON import support is less battle-tested than XML import. If you're working wit
 
 ## Next Steps
 
-- [JSON vs XML Comparison](/tally-integartion/json-api/json-vs-xml/) -- detailed feature comparison
-- [Migration Guide](/tally-integartion/json-api/migration-guide/) -- moving from XML to JSON
+- [JSON vs XML Comparison](/tally-integration/json-api/json-vs-xml/) -- detailed feature comparison
+- [Migration Guide](/tally-integration/json-api/migration-guide/) -- moving from XML to JSON

@@ -267,4 +267,4 @@ graph TD
     F --> H
 ```
 
-At this point, the connector has a map of the Tally installation: where the data lives, what port to connect on, which companies exist, and what TDL addons are installed. The next step is [Tally Profile Detection](/tally-integartion/architecture/tally-profile-detection/) over the HTTP API.
+At this point, the connector has a map of the Tally installation: where the data lives, what port to connect on, which companies exist, and what TDL addons are installed. The next step is [Tally Profile Detection](/tally-integration/architecture/tally-profile-detection/) over the HTTP API.

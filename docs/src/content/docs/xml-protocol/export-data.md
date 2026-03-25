@@ -201,7 +201,7 @@ The Daybook gives you all vouchers within a date range:
 ```
 
 :::danger
-For large companies, pulling the full Daybook in one shot can freeze Tally. Use day-by-day batching for companies with more than a few thousand vouchers per month. See [Batching Rules](/tally-integartion/xml-protocol/batching-rules/) for details.
+For large companies, pulling the full Daybook in one shot can freeze Tally. Use day-by-day batching for companies with more than a few thousand vouchers per month. See [Batching Rules](/tally-integration/xml-protocol/batching-rules/) for details.
 :::
 
 ## CMPINFO Tags in Responses

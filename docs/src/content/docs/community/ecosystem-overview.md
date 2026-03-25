@@ -25,7 +25,7 @@ The ecosystem breaks neatly into three buckets.
 
 ### 1. Open Source Tools
 
-Community-built libraries and utilities. Free, hackable, and often battle-tested. The star player here is [tally-database-loader](/tally-integartion/community/tally-database-loader/) — a Node.js tool that rips data out of Tally and loads it into real databases.
+Community-built libraries and utilities. Free, hackable, and often battle-tested. The star player here is [tally-database-loader](/tally-integration/community/tally-database-loader/) — a Node.js tool that rips data out of Tally and loads it into real databases.
 
 Others include TallyConnector (C#), Python_Tally, TallPy, and more. We cover these in detail on the next page.
 
@@ -33,7 +33,7 @@ Others include TallyConnector (C#), Python_Tally, TallPy, and more. We cover the
 
 Companies that turned "Tally integration is hard" into a business. API2Books wraps Tally in clean JSON APIs. Suvit (now Vyapar TaxOne) uses AI to automate data entry. CData sells enterprise ODBC drivers.
 
-These are [covered here](/tally-integartion/community/commercial-platforms/).
+These are [covered here](/tally-integration/community/commercial-platforms/).
 
 ### 3. Unified API Providers
 
@@ -110,9 +110,9 @@ Every Tally integration — open source, commercial, or custom — is just XML-o
 
 | Page | What You'll Learn |
 |------|------------------|
-| [OSS Tools](/tally-integartion/community/tally-database-loader/) | Deep dive into open source options |
-| [Commercial Platforms](/tally-integartion/community/commercial-platforms/) | When to reach for a paid solution |
-| [Language Recipes](/tally-integartion/community/language-recipes/) | Copy-paste code for your language |
-| [Build vs Buy](/tally-integartion/community/build-vs-buy/) | Decision framework for your project |
+| [OSS Tools](/tally-integration/community/tally-database-loader/) | Deep dive into open source options |
+| [Commercial Platforms](/tally-integration/community/commercial-platforms/) | When to reach for a paid solution |
+| [Language Recipes](/tally-integration/community/language-recipes/) | Copy-paste code for your language |
+| [Build vs Buy](/tally-integration/community/build-vs-buy/) | Decision framework for your project |
 
-Pick the page that matches where you are in your journey. If you're just exploring, keep reading in order. If you need code *now*, jump to [Language Recipes](/tally-integartion/community/language-recipes/).
+Pick the page that matches where you are in your journey. If you're just exploring, keep reading in order. If you need code *now*, jump to [Language Recipes](/tally-integration/community/language-recipes/).

@@ -116,7 +116,7 @@ We made a deliberate choice to use XML as the primary format throughout this gui
 1. **Broadest compatibility**: Works with every Tally version you'll encounter in the field
 2. **Most examples available**: When we reference patterns, the community examples are in XML
 3. **Production-proven**: The write-back patterns in this guide have been tested with XML across dozens of real stockist installations
-4. **Easier to translate**: Going from XML to JSON is straightforward (see [Migration Guide](/tally-integartion/json-api/migration-guide/)). Going the other way requires understanding XML's quirks.
+4. **Easier to translate**: Going from XML to JSON is straightforward (see [Migration Guide](/tally-integration/json-api/migration-guide/)). Going the other way requires understanding XML's quirks.
 
 :::tip
 Think of it this way: if you learn the XML patterns first, switching to JSON later is trivial. The concepts are identical -- only the syntax changes.
@@ -147,4 +147,4 @@ These are edge cases you're unlikely to hit in normal operations. For 99% of use
 
 ## Next Steps
 
-If you're ready to make the switch, the [Migration Guide](/tally-integartion/json-api/migration-guide/) walks you through the translation process step by step.
+If you're ready to make the switch, the [Migration Guide](/tally-integration/json-api/migration-guide/) walks you through the translation process step by step.

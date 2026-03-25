@@ -180,4 +180,4 @@ graph TD
 
 ## Next Steps
 
-Now that you've confirmed connectivity, head over to [Company Loading](/tally-integartion/setup-operations/company-loading/) to understand how Tally manages loaded companies, or jump to [Developer Tools](/tally-integartion/setup-operations/developer-tools/) to explore Tally's built-in debugging utilities.
+Now that you've confirmed connectivity, head over to [Company Loading](/tally-integration/setup-operations/company-loading/) to understand how Tally manages loaded companies, or jump to [Developer Tools](/tally-integration/setup-operations/developer-tools/) to explore Tally's built-in debugging utilities.

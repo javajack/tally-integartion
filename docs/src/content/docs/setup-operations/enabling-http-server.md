@@ -72,7 +72,7 @@ After restarting, open a browser and navigate to:
 http://localhost:9000
 ```
 
-You should see a blank page or a basic Tally response -- not a "connection refused" error. If something else is already running on port 9000, check the [Port Conflicts](/tally-integartion/setup-operations/port-conflicts/) guide.
+You should see a blank page or a basic Tally response -- not a "connection refused" error. If something else is already running on port 9000, check the [Port Conflicts](/tally-integration/setup-operations/port-conflicts/) guide.
 
 ## Setting the Port via tally.ini
 
@@ -83,7 +83,7 @@ You can also configure the port directly in the `tally.ini` file without touchin
 Port = 9000
 ```
 
-This is useful for scripted deployments. See the [tally.ini Configuration](/tally-integartion/setup-operations/tally-ini-config/) guide for details.
+This is useful for scripted deployments. See the [tally.ini Configuration](/tally-integration/setup-operations/tally-ini-config/) guide for details.
 
 ## Quick Reference
 

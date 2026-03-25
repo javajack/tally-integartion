@@ -3,7 +3,7 @@ title: Party Deduplication
 description: GSTIN-based matching for registered parties and a 10-step fuzzy matching algorithm for unregistered ones -- the practical guide to identifying the same business entity across messy ledger names.
 ---
 
-You've seen the [party naming chaos](/tally-integartion/real-world-data/party-naming-chaos/). Now let's solve it. How do you determine that "M/s Raj Medical Store, Ahmedabad" and "RAJ MED" are the same entity?
+You've seen the [party naming chaos](/tally-integration/real-world-data/party-naming-chaos/). Now let's solve it. How do you determine that "M/s Raj Medical Store, Ahmedabad" and "RAJ MED" are the same entity?
 
 ## The Two-Track Approach
 

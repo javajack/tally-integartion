@@ -5,7 +5,7 @@ description: Managing connector access alongside human operators -- scheduling s
 
 Your connector isn't the only one trying to talk to Tally. There's a billing clerk, maybe an accountant, possibly the owner checking reports. How do you share?
 
-The answer depends entirely on whether the stockist has Silver or Gold licensing. (If you haven't read it yet, check out [Gold vs Silver](/tally-integartion/setup-operations/gold-vs-silver/) first.)
+The answer depends entirely on whether the stockist has Silver or Gold licensing. (If you haven't read it yet, check out [Gold vs Silver](/tally-integration/setup-operations/gold-vs-silver/) first.)
 
 ## Silver License: Taking Turns
 

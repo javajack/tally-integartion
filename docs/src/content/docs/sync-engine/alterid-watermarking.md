@@ -187,7 +187,7 @@ Tally reports:    4200
 Your only safe option is a full sync. Log this event prominently -- it means data was restored and your local cache may have records that no longer exist in Tally.
 
 :::danger
-When AlterID goes backwards, do NOT simply reset the watermark. You must do a full reconciliation to detect records in your cache that were deleted by the restore. See [Weekly Reconciliation](/tally-integartion/sync-engine/weekly-reconciliation/).
+When AlterID goes backwards, do NOT simply reset the watermark. You must do a full reconciliation to detect records in your cache that were deleted by the restore. See [Weekly Reconciliation](/tally-integration/sync-engine/weekly-reconciliation/).
 :::
 
 ### AlterID Gaps

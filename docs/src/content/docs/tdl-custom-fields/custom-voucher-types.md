@@ -157,5 +157,5 @@ E-commerce TDLs are particularly prolific at creating custom types:
 These all map to standard `Sales`, `Sales`, `Credit Note`, `Credit Note` respectively. Without parent resolution, your connector would have no idea what they are.
 
 :::tip
-Export the full list of voucher types during your [company profiling phase](/tally-integartion/architecture/tally-profile-detection/). Build the `type_map` once and cache it. Re-build only when a TDL changes or the CA restructures voucher types.
+Export the full list of voucher types during your [company profiling phase](/tally-integration/architecture/tally-profile-detection/). Build the `type_map` once and cache it. Re-build only when a TDL changes or the CA restructures voucher types.
 :::

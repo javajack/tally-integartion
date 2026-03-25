@@ -132,4 +132,4 @@ Masters must be synced **before** vouchers. A voucher references stock items, le
 
 ## Up Next
 
-Dive into each master table in detail. We recommend starting with [Stock Items](/tally-integartion/data-model-masters/stock-items/) since it is the core of everything, then branching out to the supporting masters as needed.
+Dive into each master table in detail. We recommend starting with [Stock Items](/tally-integration/data-model-masters/stock-items/) since it is the core of everything, then branching out to the supporting masters as needed.

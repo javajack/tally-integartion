@@ -251,4 +251,4 @@ These calls are cheap — they return a single value with no heavy computation. 
 
 ## What is Next
 
-You now know how to read from Tally in three different ways. Time to flip the script and learn how to **write data into Tally** with [Import/Data](/tally-integartion/xml-protocol/import-data/).
+You now know how to read from Tally in three different ways. Time to flip the script and learn how to **write data into Tally** with [Import/Data](/tally-integration/xml-protocol/import-data/).

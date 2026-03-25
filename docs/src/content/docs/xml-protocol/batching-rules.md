@@ -288,4 +288,4 @@ full_reconcile_interval = "24h"
 
 ## What is Next
 
-You now have a complete picture of the XML protocol — all five request types, inline TDL, and batching strategies. Head back to the [Request Types overview](/tally-integartion/xml-protocol/request-types/) to review, or dive into building your connector.
+You now have a complete picture of the XML protocol — all five request types, inline TDL, and batching strategies. Head back to the [Request Types overview](/tally-integration/xml-protocol/request-types/) to review, or dive into building your connector.

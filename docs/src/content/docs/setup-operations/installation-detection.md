@@ -219,7 +219,7 @@ TCP/TDL filenames hint at their purpose:
 | `Salesman*.tcp` | Sales force tracking |
 | `IMEI*.tcp` | Serial number tracking |
 
-See the [Developer Tools](/tally-integartion/setup-operations/developer-tools/) guide for more on TDL detection.
+See the [Developer Tools](/tally-integration/setup-operations/developer-tools/) guide for more on TDL detection.
 
 ## Full Discovery Flow
 

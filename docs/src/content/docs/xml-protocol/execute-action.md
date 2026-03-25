@@ -89,7 +89,7 @@ If you are building a connector that needs to work on any stockist's machine wit
 
 One compelling use of TDL actions is building a push-based sync model. Instead of polling Tally for changes, you install a TDL that fires an action whenever a voucher is saved. That action calls back to your connector via HTTP.
 
-However, this requires a TDL file to be loaded on the stockist's machine — which may not always be feasible. For most integrations, the polling approach (using `$$MaxVoucherAlterID` from [Export/Function](/tally-integartion/xml-protocol/export-function/)) is simpler and works without any TDL installation.
+However, this requires a TDL file to be loaded on the stockist's machine — which may not always be feasible. For most integrations, the polling approach (using `$$MaxVoucherAlterID` from [Export/Function](/tally-integration/xml-protocol/export-function/)) is simpler and works without any TDL installation.
 
 ## Response Format
 
@@ -119,4 +119,4 @@ Or in case of an error:
 
 ## What is Next
 
-Now that you have seen all five request types, it is time to learn the real superpower — embedding TDL definitions directly in your XML requests, so you never need to install TDL files on the stockist's machine. Head to [Inline TDL](/tally-integartion/xml-protocol/inline-tdl/).
+Now that you have seen all five request types, it is time to learn the real superpower — embedding TDL definitions directly in your XML requests, so you never need to install TDL files on the stockist's machine. Head to [Inline TDL](/tally-integration/xml-protocol/inline-tdl/).

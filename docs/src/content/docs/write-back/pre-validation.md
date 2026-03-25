@@ -26,7 +26,7 @@ Tally's name matching is **case-sensitive** for import operations. "raj medical"
 :::
 
 **If it doesn't exist**: You have two options:
-1. Auto-create the ledger first (see [Auto-Create Masters](/tally-integartion/write-back/auto-create-masters/))
+1. Auto-create the ledger first (see [Auto-Create Masters](/tally-integration/write-back/auto-create-masters/))
 2. Reject the order and ask the sales rep to pick from a known list
 
 ### 2. Stock Item Names Match Exactly
@@ -120,7 +120,7 @@ Party amount (debit, negative)
 
 If your app calculates GST at 18% on Rs 10,000 and gets Rs 1,800.00, but Tally's ledger expects the tax on individual line items (which might round differently), you'll get a mismatch.
 
-See [Round-Off Handling](/tally-integartion/write-back/round-off-handling/) for the fix.
+See [Round-Off Handling](/tally-integration/write-back/round-off-handling/) for the fix.
 
 ### 7. Batch Allocations Match Quantities
 
@@ -220,4 +220,4 @@ For party ledgers, you have a choice: auto-create missing parties or reject the 
 - The sales app didn't collect required fields
 - You want human review before adding parties to Tally
 
-See [Auto-Create Masters](/tally-integartion/write-back/auto-create-masters/) for the full auto-creation workflow.
+See [Auto-Create Masters](/tally-integration/write-back/auto-create-masters/) for the full auto-creation workflow.

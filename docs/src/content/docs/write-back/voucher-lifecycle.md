@@ -21,7 +21,7 @@ graph TD
 
 ## Create: ACTION="Create"
 
-This is the starting point. You've already seen this in the [Sales Order XML](/tally-integartion/write-back/sales-order-xml/) page.
+This is the starting point. You've already seen this in the [Sales Order XML](/tally-integration/write-back/sales-order-xml/) page.
 
 ```xml
 <VOUCHER VCHTYPE="Sales Order"
@@ -174,7 +174,7 @@ Track the voucher state in your local database:
 | Cancel | `ALTERED=1` | Treated as alter internally |
 | Delete | `DELETED=1` | GUID now invalid |
 
-See [Import Response](/tally-integartion/write-back/import-response/) for full details on parsing these responses.
+See [Import Response](/tally-integration/write-back/import-response/) for full details on parsing these responses.
 
 ## Common Pitfalls
 

@@ -86,7 +86,7 @@ GST rates themselves have been revised multiple times. Key changes affecting com
 ### Textiles/Garments
 - **Pre-Jan 2022**: Most garments at 5% flat
 - **Jan 2022 onwards**: Price-dependent slab (up to Rs.1000 = 5%, above = 12%)
-- See [Price-Dependent GST](/tally-integartion/gst-compliance/price-dependent-gst/) for details
+- See [Price-Dependent GST](/tally-integration/gst-compliance/price-dependent-gst/) for details
 
 ### Pharma
 - Most medicines: 12% (stable since GST launch)

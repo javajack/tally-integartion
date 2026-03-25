@@ -21,7 +21,7 @@ graph TD
     F --> C
 ```
 
-The **broker** (dalal) is a key player in garments -- they connect buyers and sellers, earn commission, and often control the relationships. More on that in the [Brokers & Agents](/tally-integartion/vertical-garments/brokers-agents/) chapter.
+The **broker** (dalal) is a key player in garments -- they connect buyers and sellers, earn commission, and often control the relationships. More on that in the [Brokers & Agents](/tally-integration/vertical-garments/brokers-agents/) chapter.
 
 ## The SKU Explosion Problem
 
@@ -40,7 +40,7 @@ Why so many? Because a single shirt "design" explodes into dozens of SKUs:
 Add seasonal collections = 10,000+ SKUs
 ```
 
-And Tally has **no native size-color matrix**. Each combination is a separate Stock Item. This is the fundamental challenge that drives everything in this vertical. See [Size-Color Matrix](/tally-integartion/vertical-garments/size-color-matrix/) for the full story.
+And Tally has **no native size-color matrix**. Each combination is a separate Stock Item. This is the fundamental challenge that drives everything in this vertical. See [Size-Color Matrix](/tally-integration/vertical-garments/size-color-matrix/) for the full story.
 
 ## Seasonal Cycles
 
@@ -103,7 +103,7 @@ Garment stockists typically enable:
 
 ### TDL Addons
 
-Garment-specific TDLs are common. See [Garment TDL Addons](/tally-integartion/vertical-garments/garment-tdl-addons/) for details on:
+Garment-specific TDLs are common. See [Garment TDL Addons](/tally-integration/vertical-garments/garment-tdl-addons/) for details on:
 
 - **TDLStore Garment Billing** -- size-wise quantity columns
 - **TallyPlanet Garment Module** -- batch-as-size tracking

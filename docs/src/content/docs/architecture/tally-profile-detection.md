@@ -97,7 +97,7 @@ Discovered via XML API and filesystem scanning:
 </ENVELOPE>
 ```
 
-The connector also scans the filesystem for `.tcp` and `.tdl` files (see [Filesystem Scanning](/tally-integartion/architecture/filesystem-scanning/)).
+The connector also scans the filesystem for `.tcp` and `.tdl` files (see [Filesystem Scanning](/tally-integration/architecture/filesystem-scanning/)).
 
 ### 4. UDF Discovery
 

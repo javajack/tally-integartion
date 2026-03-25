@@ -162,7 +162,7 @@ This one is different. It connects Excel directly to Tally using TDL (Tally Defi
 
 ## The Bottom Line
 
-If you need to get Tally data into a database, **tally-database-loader** is the place to start. If you need a language-specific library, pick the one that matches your stack. And if you need write-back or bidirectional sync, you'll likely need to build that yourself or look at the [commercial options](/tally-integartion/community/commercial-platforms/).
+If you need to get Tally data into a database, **tally-database-loader** is the place to start. If you need a language-specific library, pick the one that matches your stack. And if you need write-back or bidirectional sync, you'll likely need to build that yourself or look at the [commercial options](/tally-integration/community/commercial-platforms/).
 
 :::caution[OSS maintenance reality]
 Most of these projects are maintained by one or two people. Before betting your production system on any of them, check the commit history, open issues, and responsiveness of the maintainer. Fork early, fork often.

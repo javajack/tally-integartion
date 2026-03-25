@@ -93,7 +93,7 @@ The number in parentheses is the state code (24 = Gujarat, 27 = Maharashtra).
 
 3. **GSTIN is the only reliable entity identifier** for registered businesses.
 
-4. **For unregistered parties** (small medical shops with no GSTIN), you need the [fuzzy matching algorithm](/tally-integartion/real-world-data/party-deduplication/).
+4. **For unregistered parties** (small medical shops with no GSTIN), you need the [fuzzy matching algorithm](/tally-integration/real-world-data/party-deduplication/).
 
 5. **Store the raw name as-is.** Don't try to "clean" it -- the user typed it that way for a reason.
 

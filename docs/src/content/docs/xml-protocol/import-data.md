@@ -365,4 +365,4 @@ For Alter, Cancel, and Delete, include identifying tags:
 
 ## What is Next
 
-Import/Data covers most write scenarios. For the rare case where you need to trigger an internal Tally action, see [Execute/TDLAction](/tally-integartion/xml-protocol/execute-action/).
+Import/Data covers most write scenarios. For the rare case where you need to trigger an internal Tally action, see [Execute/TDLAction](/tally-integration/xml-protocol/execute-action/).

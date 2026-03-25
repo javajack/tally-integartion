@@ -134,7 +134,7 @@ Your connector should track the status field to distinguish active vs cancelled 
 
 ## Turnover Threshold for E-Invoicing Mandate
 
-E-invoicing has been rolling out in phases based on annual turnover. See the [Regulatory Timeline](/tally-integartion/gst-compliance/regulatory-timeline/) for the full history.
+E-invoicing has been rolling out in phases based on annual turnover. See the [Regulatory Timeline](/tally-integration/gst-compliance/regulatory-timeline/) for the full history.
 
 As of the current rules:
 

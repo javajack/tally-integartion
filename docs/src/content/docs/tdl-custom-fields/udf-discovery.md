@@ -110,7 +110,7 @@ Map each discovered UDF by its object type, tag name, and index:
 ```
 
 :::caution
-The `index` is the **stable identifier**. The `name` can change if the TDL is unloaded. Always key your storage on `index`, not `name`. See [Named vs Indexed](/tally-integartion/tdl-custom-fields/named-vs-indexed/) for the full story.
+The `index` is the **stable identifier**. The `name` can change if the TDL is unloaded. Always key your storage on `index`, not `name`. See [Named vs Indexed](/tally-integration/tdl-custom-fields/named-vs-indexed/) for the full story.
 :::
 
 ## Step 4: Store in the Tally Profile

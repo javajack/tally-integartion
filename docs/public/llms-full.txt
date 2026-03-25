@@ -273,7 +273,7 @@ graph TD
     F --> H
 ```
 
-At this point, the connector has a map of the Tally installation: where the data lives, what port to connect on, which companies exist, and what TDL addons are installed. The next step is [Tally Profile Detection](/tally-integartion/architecture/tally-profile-detection/) over the HTTP API.
+At this point, the connector has a map of the Tally installation: where the data lives, what port to connect on, which companies exist, and what TDL addons are installed. The next step is [Tally Profile Detection](/tally-integration/architecture/tally-profile-detection/) over the HTTP API.
 
 ---
 
@@ -396,7 +396,7 @@ This module owns all communication with TallyPrime's XML-over-HTTP API.
 **`types.go`** — Go structs mirroring Tally objects. One struct per master type, one per transaction sub-table.
 
 :::caution
-Tally uses two different XML structures depending on whether the voucher was entered in "Invoice View" or "Accounting View." The parser must check for both `ALLLEDGERENTRIES.LIST` and `LEDGERENTRIES.LIST`. See the [edge cases doc](/tally-integartion/architecture/risk-register/) for details.
+Tally uses two different XML structures depending on whether the voucher was entered in "Invoice View" or "Accounting View." The parser must check for both `ALLLEDGERENTRIES.LIST` and `LEDGERENTRIES.LIST`. See the [edge cases doc](/tally-integration/architecture/risk-register/) for details.
 :::
 
 ### `internal/cache/` — Local SQLite
@@ -2276,7 +2276,7 @@ Discovered via XML API and filesystem scanning:
 </ENVELOPE>
 ```
 
-The connector also scans the filesystem for `.tcp` and `.tdl` files (see [Filesystem Scanning](/tally-integartion/architecture/filesystem-scanning/)).
+The connector also scans the filesystem for `.tcp` and `.tdl` files (see [Filesystem Scanning](/tally-integration/architecture/filesystem-scanning/)).
 
 ### 4. UDF Discovery
 
@@ -3411,8 +3411,8 @@ Many teams start by buying, then migrate to hybrid as they understand their need
 
 For most teams, **start hybrid**:
 
-1. Use [tally-database-loader](/tally-integartion/community/tally-database-loader/) to get data flowing immediately
-2. Build your write-back logic in Go or Python using the [language recipes](/tally-integartion/community/language-recipes/)
+1. Use [tally-database-loader](/tally-integration/community/tally-database-loader/) to get data flowing immediately
+2. Build your write-back logic in Go or Python using the [language recipes](/tally-integration/community/language-recipes/)
 3. Only evaluate commercial platforms if you need features you can't build in a reasonable time
 
 This gets you to production fast while keeping your options open.
@@ -3620,7 +3620,7 @@ The decision usually comes down to two questions:
 Most of these platforms offer free trials or demo periods. Test with your actual Tally data before signing a contract. Pay special attention to how they handle your specific voucher types and custom fields.
 :::
 
-If none of these fit, you might need to [build your own](/tally-integartion/community/build-vs-buy/). But read the decision framework first — it's more work than you think.
+If none of these fit, you might need to [build your own](/tally-integration/community/build-vs-buy/). But read the decision framework first — it's more work than you think.
 
 ---
 
@@ -3651,7 +3651,7 @@ The ecosystem breaks neatly into three buckets.
 
 ### 1. Open Source Tools
 
-Community-built libraries and utilities. Free, hackable, and often battle-tested. The star player here is [tally-database-loader](/tally-integartion/community/tally-database-loader/) — a Node.js tool that rips data out of Tally and loads it into real databases.
+Community-built libraries and utilities. Free, hackable, and often battle-tested. The star player here is [tally-database-loader](/tally-integration/community/tally-database-loader/) — a Node.js tool that rips data out of Tally and loads it into real databases.
 
 Others include TallyConnector (C#), Python_Tally, TallPy, and more. We cover these in detail on the next page.
 
@@ -3659,7 +3659,7 @@ Others include TallyConnector (C#), Python_Tally, TallPy, and more. We cover the
 
 Companies that turned "Tally integration is hard" into a business. API2Books wraps Tally in clean JSON APIs. Suvit (now Vyapar TaxOne) uses AI to automate data entry. CData sells enterprise ODBC drivers.
 
-These are [covered here](/tally-integartion/community/commercial-platforms/).
+These are [covered here](/tally-integration/community/commercial-platforms/).
 
 ### 3. Unified API Providers
 
@@ -3736,12 +3736,12 @@ Every Tally integration — open source, commercial, or custom — is just XML-o
 
 | Page | What You'll Learn |
 |------|------------------|
-| [OSS Tools](/tally-integartion/community/tally-database-loader/) | Deep dive into open source options |
-| [Commercial Platforms](/tally-integartion/community/commercial-platforms/) | When to reach for a paid solution |
-| [Language Recipes](/tally-integartion/community/language-recipes/) | Copy-paste code for your language |
-| [Build vs Buy](/tally-integartion/community/build-vs-buy/) | Decision framework for your project |
+| [OSS Tools](/tally-integration/community/tally-database-loader/) | Deep dive into open source options |
+| [Commercial Platforms](/tally-integration/community/commercial-platforms/) | When to reach for a paid solution |
+| [Language Recipes](/tally-integration/community/language-recipes/) | Copy-paste code for your language |
+| [Build vs Buy](/tally-integration/community/build-vs-buy/) | Decision framework for your project |
 
-Pick the page that matches where you are in your journey. If you're just exploring, keep reading in order. If you need code *now*, jump to [Language Recipes](/tally-integartion/community/language-recipes/).
+Pick the page that matches where you are in your journey. If you're just exploring, keep reading in order. If you need code *now*, jump to [Language Recipes](/tally-integration/community/language-recipes/).
 
 ---
 
@@ -4285,7 +4285,7 @@ This one is different. It connects Excel directly to Tally using TDL (Tally Defi
 
 ## The Bottom Line
 
-If you need to get Tally data into a database, **tally-database-loader** is the place to start. If you need a language-specific library, pick the one that matches your stack. And if you need write-back or bidirectional sync, you'll likely need to build that yourself or look at the [commercial options](/tally-integartion/community/commercial-platforms/).
+If you need to get Tally data into a database, **tally-database-loader** is the place to start. If you need a language-specific library, pick the one that matches your stack. And if you need write-back or bidirectional sync, you'll likely need to build that yourself or look at the [commercial options](/tally-integration/community/commercial-platforms/).
 
 :::caution[OSS maintenance reality]
 Most of these projects are maintained by one or two people. Before betting your production system on any of them, check the commit history, open issues, and responsiveness of the maintainer. Fork early, fork often.
@@ -5278,7 +5278,7 @@ Masters must be synced **before** vouchers. A voucher references stock items, le
 
 ## Up Next
 
-Dive into each master table in detail. We recommend starting with [Stock Items](/tally-integartion/data-model-masters/stock-items/) since it is the core of everything, then branching out to the supporting masters as needed.
+Dive into each master table in detail. We recommend starting with [Stock Items](/tally-integration/data-model-masters/stock-items/) since it is the core of everything, then branching out to the supporting masters as needed.
 
 ---
 
@@ -7712,12 +7712,12 @@ When pulling voucher data, always fetch the header first, then hydrate the sub-t
 
 Dive into each table in detail:
 
-1. [Voucher Header](/tally-integartion/data-model-transactions/voucher-header/) -- the foundation of every transaction
-2. [Accounting Entries](/tally-integartion/data-model-transactions/accounting-entries/) -- where the money flows
-3. [Inventory Entries](/tally-integartion/data-model-transactions/inventory-entries/) -- where the stock moves
-4. [Batch Allocations](/tally-integartion/data-model-transactions/batch-allocations/) -- expiry dates, manufacturing dates, pharma compliance
-5. [Bill Allocations](/tally-integartion/data-model-transactions/bill-allocations/) -- receivables, payables, aging
-6. [Cost Centre & Bank](/tally-integartion/data-model-transactions/cost-centre-bank/) -- salesman tracking and cheque details
+1. [Voucher Header](/tally-integration/data-model-transactions/voucher-header/) -- the foundation of every transaction
+2. [Accounting Entries](/tally-integration/data-model-transactions/accounting-entries/) -- where the money flows
+3. [Inventory Entries](/tally-integration/data-model-transactions/inventory-entries/) -- where the stock moves
+4. [Batch Allocations](/tally-integration/data-model-transactions/batch-allocations/) -- expiry dates, manufacturing dates, pharma compliance
+5. [Bill Allocations](/tally-integration/data-model-transactions/bill-allocations/) -- receivables, payables, aging
+6. [Cost Centre & Bank](/tally-integration/data-model-transactions/cost-centre-bank/) -- salesman tracking and cheque details
 
 ---
 
@@ -10048,7 +10048,7 @@ before building your own connector.
 ## Next Steps
 
 Ready to make your first request?
-Head to [Hello World](/tally-integartion/getting-started/hello-world/)
+Head to [Hello World](/tally-integration/getting-started/hello-world/)
 and talk to Tally in under two minutes.
 
 ---
@@ -10063,10 +10063,10 @@ hero:
     file: ../../../assets/houston.webp
   actions:
     - text: What is Tally?
-      link: /tally-integartion/getting-started/what-is-tally/
+      link: /tally-integration/getting-started/what-is-tally/
       icon: right-arrow
     - text: Hello World
-      link: /tally-integartion/getting-started/hello-world/
+      link: /tally-integration/getting-started/hello-world/
       icon: external
       variant: minimal
 ---
@@ -10389,9 +10389,9 @@ let's look at all the ways you can talk to
 Tally — and why XML-over-HTTP wins.
 
 Head to the
-[Integration Landscape](/tally-integartion/getting-started/integration-landscape/)
+[Integration Landscape](/tally-integration/getting-started/integration-landscape/)
 to see the full comparison, or skip straight
-to [Hello World](/tally-integartion/getting-started/hello-world/)
+to [Hello World](/tally-integration/getting-started/hello-world/)
 to fire your first request.
 
 ---
@@ -10532,7 +10532,7 @@ Your connector should track the status field to distinguish active vs cancelled 
 
 ## Turnover Threshold for E-Invoicing Mandate
 
-E-invoicing has been rolling out in phases based on annual turnover. See the [Regulatory Timeline](/tally-integartion/gst-compliance/regulatory-timeline/) for the full history.
+E-invoicing has been rolling out in phases based on annual turnover. See the [Regulatory Timeline](/tally-integration/gst-compliance/regulatory-timeline/) for the full history.
 
 As of the current rules:
 
@@ -11218,7 +11218,7 @@ GST rates themselves have been revised multiple times. Key changes affecting com
 ### Textiles/Garments
 - **Pre-Jan 2022**: Most garments at 5% flat
 - **Jan 2022 onwards**: Price-dependent slab (up to Rs.1000 = 5%, above = 12%)
-- See [Price-Dependent GST](/tally-integartion/gst-compliance/price-dependent-gst/) for details
+- See [Price-Dependent GST](/tally-integration/gst-compliance/price-dependent-gst/) for details
 
 ### Pharma
 - Most medicines: 12% (stable since GST launch)
@@ -11393,7 +11393,7 @@ We made a deliberate choice to use XML as the primary format throughout this gui
 1. **Broadest compatibility**: Works with every Tally version you'll encounter in the field
 2. **Most examples available**: When we reference patterns, the community examples are in XML
 3. **Production-proven**: The write-back patterns in this guide have been tested with XML across dozens of real stockist installations
-4. **Easier to translate**: Going from XML to JSON is straightforward (see [Migration Guide](/tally-integartion/json-api/migration-guide/)). Going the other way requires understanding XML's quirks.
+4. **Easier to translate**: Going from XML to JSON is straightforward (see [Migration Guide](/tally-integration/json-api/migration-guide/)). Going the other way requires understanding XML's quirks.
 
 :::tip
 Think of it this way: if you learn the XML patterns first, switching to JSON later is trivial. The concepts are identical -- only the syntax changes.
@@ -11424,7 +11424,7 @@ These are edge cases you're unlikely to hit in normal operations. For 99% of use
 
 ## Next Steps
 
-If you're ready to make the switch, the [Migration Guide](/tally-integartion/json-api/migration-guide/) walks you through the translation process step by step.
+If you're ready to make the switch, the [Migration Guide](/tally-integration/json-api/migration-guide/) walks you through the translation process step by step.
 
 ---
 
@@ -12126,8 +12126,8 @@ JSON import support is less battle-tested than XML import. If you're working wit
 
 ## Next Steps
 
-- [JSON vs XML Comparison](/tally-integartion/json-api/json-vs-xml/) -- detailed feature comparison
-- [Migration Guide](/tally-integartion/json-api/migration-guide/) -- moving from XML to JSON
+- [JSON vs XML Comparison](/tally-integration/json-api/json-vs-xml/) -- detailed feature comparison
+- [Migration Guide](/tally-integration/json-api/migration-guide/) -- moving from XML to JSON
 
 ---
 
@@ -12410,7 +12410,7 @@ Excel's Microsoft Query feature can connect directly to Tally's ODBC interface. 
 
 3. **Select Tables**: You'll see Tally's available collections (Ledger, StockItem, Voucher, etc.)
 
-4. **Write Query**: Use Tally's SQL syntax (see [SQL Queries](/tally-integartion/odbc-interface/sql-queries/))
+4. **Write Query**: Use Tally's SQL syntax (see [SQL Queries](/tally-integration/odbc-interface/sql-queries/))
 
 5. **Import**: Data flows into your Excel sheet
 
@@ -12527,8 +12527,8 @@ For security, we recommend keeping ODBC on localhost only and using the HTTP API
 
 ## Next Steps
 
-- [SQL Queries](/tally-integartion/odbc-interface/sql-queries/) -- learn Tally's SQL dialect with the `$` prefix
-- [Limitations](/tally-integartion/odbc-interface/limitations/) -- what ODBC can't do (and when to use the HTTP API instead)
+- [SQL Queries](/tally-integration/odbc-interface/sql-queries/) -- learn Tally's SQL dialect with the `$` prefix
+- [Limitations](/tally-integration/odbc-interface/limitations/) -- what ODBC can't do (and when to use the HTTP API instead)
 
 ---
 
@@ -12775,7 +12775,7 @@ Compare the latest `$AlterId` with your stored watermark. If they differ, someth
 
 ## Next Steps
 
-- [Limitations](/tally-integartion/odbc-interface/limitations/) -- understand what ODBC can't do before you invest too heavily in it
+- [Limitations](/tally-integration/odbc-interface/limitations/) -- understand what ODBC can't do before you invest too heavily in it
 
 ---
 
@@ -14465,7 +14465,7 @@ Indian businesses use Hindi, Gujarati, and other scripts in their data. A stock 
 
 ## What's next
 
-Now that you know what the response envelope looks like, the real work begins: parsing the actual data inside it. And for large responses, you'll need a streaming parser -- which is exactly what the [next page](/tally-integartion/parsing-responses/streaming-parser/) covers.
+Now that you know what the response envelope looks like, the real work begins: parsing the actual data inside it. And for large responses, you'll need a streaming parser -- which is exactly what the [next page](/tally-integration/parsing-responses/streaming-parser/) covers.
 
 ---
 
@@ -15192,7 +15192,7 @@ Perfect data is a fantasy. Here's what you'll actually find -- ranked by how oft
 
 | # | Issue | Frequency | Impact | Handling Strategy |
 |---|---|---|---|---|
-| 1 | Duplicate ledgers | Very High | Double-counted outstandings | [Fuzzy dedup](/tally-integartion/real-world-data/party-deduplication/) by GSTIN or name |
+| 1 | Duplicate ledgers | Very High | Double-counted outstandings | [Fuzzy dedup](/tally-integration/real-world-data/party-deduplication/) by GSTIN or name |
 | 2 | Missing GSTIN | Very High | No reliable entity matching | Fall back to fuzzy name matching |
 | 3 | Negative stock | Very High | Incorrect available qty | Accept as valid; don't filter |
 | 4 | Spelling variations | Very High | Item/party matching fails | Case-insensitive fuzzy search |
@@ -15212,7 +15212,7 @@ Perfect data is a fantasy. Here's what you'll actually find -- ranked by how oft
 
 These appear in **almost every** Tally installation. Your connector must handle them from day one.
 
-**Duplicate Ledgers** -- The same medical shop appears as "Raj Medical", "Raj Medical Store", and "M/s Raj Medical Store, Ahmedabad". Three ledgers, one business. See [Party Deduplication](/tally-integartion/real-world-data/party-deduplication/).
+**Duplicate Ledgers** -- The same medical shop appears as "Raj Medical", "Raj Medical Store", and "M/s Raj Medical Store, Ahmedabad". Three ledgers, one business. See [Party Deduplication](/tally-integration/real-world-data/party-deduplication/).
 
 **Missing GSTIN** -- Small medical shops, especially in rural areas, are often unregistered. No GSTIN means no reliable identifier. Fuzzy name matching is your only option.
 
@@ -15618,7 +15618,7 @@ title: Party Deduplication
 description: GSTIN-based matching for registered parties and a 10-step fuzzy matching algorithm for unregistered ones -- the practical guide to identifying the same business entity across messy ledger names.
 ---
 
-You've seen the [party naming chaos](/tally-integartion/real-world-data/party-naming-chaos/). Now let's solve it. How do you determine that "M/s Raj Medical Store, Ahmedabad" and "RAJ MED" are the same entity?
+You've seen the [party naming chaos](/tally-integration/real-world-data/party-naming-chaos/). Now let's solve it. How do you determine that "M/s Raj Medical Store, Ahmedabad" and "RAJ MED" are the same entity?
 
 ## The Two-Track Approach
 
@@ -15892,7 +15892,7 @@ The number in parentheses is the state code (24 = Gujarat, 27 = Maharashtra).
 
 3. **GSTIN is the only reliable entity identifier** for registered businesses.
 
-4. **For unregistered parties** (small medical shops with no GSTIN), you need the [fuzzy matching algorithm](/tally-integartion/real-world-data/party-deduplication/).
+4. **For unregistered parties** (small medical shops with no GSTIN), you need the [fuzzy matching algorithm](/tally-integration/real-world-data/party-deduplication/).
 
 5. **Store the raw name as-is.** Don't try to "clean" it -- the user typed it that way for a reason.
 
@@ -16764,7 +16764,7 @@ description: Managing connector access alongside human operators -- scheduling s
 
 Your connector isn't the only one trying to talk to Tally. There's a billing clerk, maybe an accountant, possibly the owner checking reports. How do you share?
 
-The answer depends entirely on whether the stockist has Silver or Gold licensing. (If you haven't read it yet, check out [Gold vs Silver](/tally-integartion/setup-operations/gold-vs-silver/) first.)
+The answer depends entirely on whether the stockist has Silver or Gold licensing. (If you haven't read it yet, check out [Gold vs Silver](/tally-integration/setup-operations/gold-vs-silver/) first.)
 
 ## Silver License: Taking Turns
 
@@ -17442,7 +17442,7 @@ After restarting, open a browser and navigate to:
 http://localhost:9000
 ```
 
-You should see a blank page or a basic Tally response -- not a "connection refused" error. If something else is already running on port 9000, check the [Port Conflicts](/tally-integartion/setup-operations/port-conflicts/) guide.
+You should see a blank page or a basic Tally response -- not a "connection refused" error. If something else is already running on port 9000, check the [Port Conflicts](/tally-integration/setup-operations/port-conflicts/) guide.
 
 ## Setting the Port via tally.ini
 
@@ -17453,7 +17453,7 @@ You can also configure the port directly in the `tally.ini` file without touchin
 Port = 9000
 ```
 
-This is useful for scripted deployments. See the [tally.ini Configuration](/tally-integartion/setup-operations/tally-ini-config/) guide for details.
+This is useful for scripted deployments. See the [tally.ini Configuration](/tally-integration/setup-operations/tally-ini-config/) guide for details.
 
 ## Quick Reference
 
@@ -17647,7 +17647,7 @@ graph TD
 
 ## Next Steps
 
-Now that you've confirmed connectivity, head over to [Company Loading](/tally-integartion/setup-operations/company-loading/) to understand how Tally manages loaded companies, or jump to [Developer Tools](/tally-integartion/setup-operations/developer-tools/) to explore Tally's built-in debugging utilities.
+Now that you've confirmed connectivity, head over to [Company Loading](/tally-integration/setup-operations/company-loading/) to understand how Tally manages loaded companies, or jump to [Developer Tools](/tally-integration/setup-operations/developer-tools/) to explore Tally's built-in debugging utilities.
 
 ---
 
@@ -17978,7 +17978,7 @@ TCP/TDL filenames hint at their purpose:
 | `Salesman*.tcp` | Sales force tracking |
 | `IMEI*.tcp` | Serial number tracking |
 
-See the [Developer Tools](/tally-integartion/setup-operations/developer-tools/) guide for more on TDL detection.
+See the [Developer Tools](/tally-integration/setup-operations/developer-tools/) guide for more on TDL detection.
 
 ## Full Discovery Flow
 
@@ -18303,7 +18303,7 @@ netsh advfirewall firewall add rule
 ```
 
 :::danger
-Only add firewall rules for localhost access. Never open Tally's port to external network traffic. See [Security Hardening](/tally-integartion/setup-operations/security-hardening/) for why.
+Only add firewall rules for localhost access. Never open Tally's port to external network traffic. See [Security Hardening](/tally-integration/setup-operations/security-hardening/) for why.
 :::
 
 ## Common Port Conflicts
@@ -18887,7 +18887,7 @@ curl: (7) Failed to connect to
 2. Is the HTTP server enabled? (F1 > Settings > Connectivity)
 3. Did you restart Tally after enabling HTTP?
 4. Is the port correct? (Check `tally.ini`)
-5. Is another app using port 9000? (See [Port Conflicts](/tally-integartion/setup-operations/port-conflicts/))
+5. Is another app using port 9000? (See [Port Conflicts](/tally-integration/setup-operations/port-conflicts/))
 
 ### Connection Timeout
 
@@ -19095,7 +19095,7 @@ match accounting entries
 
 The sum of inventory line amounts doesn't equal the accounting allocation. Common when GST rounding creates tiny differences.
 
-**Fix:** Add a round-off entry (see the [research notes on round-off handling](/tally-integartion/setup-operations/troubleshooting-errors/#the-round-off-fix)).
+**Fix:** Add a round-off entry (see the [research notes on round-off handling](/tally-integration/setup-operations/troubleshooting-errors/#the-round-off-fix)).
 
 #### The Round-Off Fix
 
@@ -19336,7 +19336,7 @@ Tally reports:    4200
 Your only safe option is a full sync. Log this event prominently -- it means data was restored and your local cache may have records that no longer exist in Tally.
 
 :::danger
-When AlterID goes backwards, do NOT simply reset the watermark. You must do a full reconciliation to detect records in your cache that were deleted by the restore. See [Weekly Reconciliation](/tally-integartion/sync-engine/weekly-reconciliation/).
+When AlterID goes backwards, do NOT simply reset the watermark. You must do a full reconciliation to detect records in your cache that were deleted by the restore. See [Weekly Reconciliation](/tally-integration/sync-engine/weekly-reconciliation/).
 :::
 
 ### AlterID Gaps
@@ -20356,7 +20356,7 @@ Masters MUST complete before Vouchers. Vouchers reference masters by name (ledge
 | Voucher references unknown master | Log warning, store voucher anyway, flag for reconciliation |
 | XML parse error on specific voucher | Skip voucher, log error, continue with next batch |
 
-This is the heaviest phase. For large companies, see [Batching Strategies](/tally-integartion/sync-engine/batching-strategies/) for how to break it into manageable chunks.
+This is the heaviest phase. For large companies, see [Batching Strategies](/tally-integration/sync-engine/batching-strategies/) for how to break it into manageable chunks.
 
 ---
 
@@ -20381,7 +20381,7 @@ This is the heaviest phase. For large companies, see [Batching Strategies](/tall
 **Why not just compute from vouchers?**
 
 :::danger
-**Never compute stock position from vouchers.** Tally's Stock Summary accounts for opening balances, valuation methods (FIFO, LIFO, Weighted Average), corrections, and adjustments that your voucher-based computation will miss. See [Stock Position Truth](/tally-integartion/sync-engine/stock-position-truth/) for the full explanation.
+**Never compute stock position from vouchers.** Tally's Stock Summary accounts for opening balances, valuation methods (FIFO, LIFO, Weighted Average), corrections, and adjustments that your voucher-based computation will miss. See [Stock Position Truth](/tally-integration/sync-engine/stock-position-truth/) for the full explanation.
 :::
 
 **Error handling**:
@@ -20419,7 +20419,7 @@ This is the heaviest phase. For large companies, see [Batching Strategies](/tall
 | Central API rejects payload | Log error, mark as failed, alert |
 | Tally rejects write-back | Parse error response, log, retry with adjusted XML |
 
-See [Push Queue](/tally-integartion/sync-engine/push-queue/) for the full queue implementation.
+See [Push Queue](/tally-integration/sync-engine/push-queue/) for the full queue implementation.
 
 ---
 
@@ -20723,7 +20723,7 @@ For a large stockist with 200,000+ vouchers:
 | Network | 500 MB - 2 GB XML |
 
 :::caution
-Full sync on large companies MUST use day-by-day batching. Pulling a full year's vouchers in one request can freeze Tally indefinitely. See [Batching Strategies](/tally-integartion/sync-engine/batching-strategies/).
+Full sync on large companies MUST use day-by-day batching. Pulling a full year's vouchers in one request can freeze Tally indefinitely. See [Batching Strategies](/tally-integration/sync-engine/batching-strategies/).
 :::
 
 ## Incremental Sync
@@ -20803,7 +20803,7 @@ There are known scenarios where incremental sync can miss things:
 3. **Company restore** -- If the Tally company data is restored from a backup, AlterIDs can go backwards or reset. Your watermark becomes invalid.
 
 :::tip
-This is why weekly reconciliation is non-negotiable. Incremental sync is an optimization. Full sync is the source of truth. See [Weekly Reconciliation](/tally-integartion/sync-engine/weekly-reconciliation/) for how we catch what incremental misses.
+This is why weekly reconciliation is non-negotiable. Incremental sync is an optimization. Full sync is the source of truth. See [Weekly Reconciliation](/tally-integration/sync-engine/weekly-reconciliation/) for how we catch what incremental misses.
 :::
 
 ## Configuration
@@ -20911,7 +20911,7 @@ Mismatches can happen because:
 - Your voucher-based computation diverged from Tally's
 
 :::danger
-**Tally's Stock Summary always wins.** When there's a mismatch, update your cached position from the report. Never trust your own computation over Tally's reported values. See [Stock Position Truth](/tally-integartion/sync-engine/stock-position-truth/).
+**Tally's Stock Summary always wins.** When there's a mismatch, update your cached position from the report. Never trust your own computation over Tally's reported values. See [Stock Position Truth](/tally-integration/sync-engine/stock-position-truth/).
 :::
 
 ## Check 3: Outstanding Order Reconciliation
@@ -22557,7 +22557,7 @@ Distributors track sales performance per salesman in one of two ways. The TDL ap
 - `Route` -- delivery route code
 
 :::caution
-Some distributors track salesmen via **Cost Centres** instead of UDFs. Your connector must check both patterns. See the [research notes on the "Salesman as Cost Centre" pattern](/tally-integartion/edge-cases/data-integrity/).
+Some distributors track salesmen via **Cost Centres** instead of UDFs. Your connector must check both patterns. See the [research notes on the "Salesman as Cost Centre" pattern](/tally-integration/edge-cases/data-integrity/).
 :::
 
 ## IMEI / Serial Number Tracking
@@ -22600,7 +22600,7 @@ You can often guess the addon category from the `.tcp` filename:
 | `eway`, `transport` | Logistics |
 
 :::tip
-Filename detection is a heuristic. Always confirm by running the [UDF Discovery Algorithm](/tally-integartion/tdl-custom-fields/udf-discovery/) to see what actually appears in the XML.
+Filename detection is a heuristic. Always confirm by running the [UDF Discovery Algorithm](/tally-integration/tdl-custom-fields/udf-discovery/) to see what actually appears in the XML.
 :::
 
 ---
@@ -22764,7 +22764,7 @@ E-commerce TDLs are particularly prolific at creating custom types:
 These all map to standard `Sales`, `Sales`, `Credit Note`, `Credit Note` respectively. Without parent resolution, your connector would have no idea what they are.
 
 :::tip
-Export the full list of voucher types during your [company profiling phase](/tally-integartion/architecture/tally-profile-detection/). Build the `type_map` once and cache it. Re-build only when a TDL changes or the CA restructures voucher types.
+Export the full list of voucher types during your [company profiling phase](/tally-integration/architecture/tally-profile-detection/). Build the `type_map` once and cache it. Re-build only when a TDL changes or the CA restructures voucher types.
 :::
 
 ---
@@ -23089,7 +23089,7 @@ Map each discovered UDF by its object type, tag name, and index:
 ```
 
 :::caution
-The `index` is the **stable identifier**. The `name` can change if the TDL is unloaded. Always key your storage on `index`, not `name`. See [Named vs Indexed](/tally-integartion/tdl-custom-fields/named-vs-indexed/) for the full story.
+The `index` is the **stable identifier**. The `name` can change if the TDL is unloaded. Always key your storage on `index`, not `name`. See [Named vs Indexed](/tally-integration/tdl-custom-fields/named-vs-indexed/) for the full story.
 :::
 
 ## Step 4: Store in the Tally Profile
@@ -24747,7 +24747,7 @@ graph TD
     F --> C
 ```
 
-The **broker** (dalal) is a key player in garments -- they connect buyers and sellers, earn commission, and often control the relationships. More on that in the [Brokers & Agents](/tally-integartion/vertical-garments/brokers-agents/) chapter.
+The **broker** (dalal) is a key player in garments -- they connect buyers and sellers, earn commission, and often control the relationships. More on that in the [Brokers & Agents](/tally-integration/vertical-garments/brokers-agents/) chapter.
 
 ## The SKU Explosion Problem
 
@@ -24766,7 +24766,7 @@ Why so many? Because a single shirt "design" explodes into dozens of SKUs:
 Add seasonal collections = 10,000+ SKUs
 ```
 
-And Tally has **no native size-color matrix**. Each combination is a separate Stock Item. This is the fundamental challenge that drives everything in this vertical. See [Size-Color Matrix](/tally-integartion/vertical-garments/size-color-matrix/) for the full story.
+And Tally has **no native size-color matrix**. Each combination is a separate Stock Item. This is the fundamental challenge that drives everything in this vertical. See [Size-Color Matrix](/tally-integration/vertical-garments/size-color-matrix/) for the full story.
 
 ## Seasonal Cycles
 
@@ -24829,7 +24829,7 @@ Garment stockists typically enable:
 
 ### TDL Addons
 
-Garment-specific TDLs are common. See [Garment TDL Addons](/tally-integartion/vertical-garments/garment-tdl-addons/) for details on:
+Garment-specific TDLs are common. See [Garment TDL Addons](/tally-integration/vertical-garments/garment-tdl-addons/) for details on:
 
 - **TDLStore Garment Billing** -- size-wise quantity columns
 - **TallyPlanet Garment Module** -- batch-as-size tracking
@@ -24882,7 +24882,7 @@ If you're building a connector that handles both pharma and garment companies, t
 | Complexity | Low (look up HSN) | High (compute per line item) |
 
 :::danger
-This is the single biggest technical difference. Pharma GST is a simple lookup. Garment GST requires per-line computation based on selling price. See [Price-Dependent GST](/tally-integartion/gst-compliance/price-dependent-gst/).
+This is the single biggest technical difference. Pharma GST is a simple lookup. Garment GST requires per-line computation based on selling price. See [Price-Dependent GST](/tally-integration/gst-compliance/price-dependent-gst/).
 :::
 
 ### 4. Seasonality
@@ -25216,7 +25216,7 @@ But Tally only gives you a flat list of 15 items with individual stock quantitie
 
 Over the years, garment businesses and TDL developers have evolved four different approaches to manage this chaos. Each approach stores data differently in Tally, and your connector encounters all of them.
 
-The [Four Approaches](/tally-integartion/vertical-garments/four-approaches/) chapter covers each in detail, but here's the quick overview:
+The [Four Approaches](/tally-integration/vertical-garments/four-approaches/) chapter covers each in detail, but here's the quick overview:
 
 | Approach | How It Works | Prevalence |
 |----------|-------------|-----------|
@@ -25255,7 +25255,7 @@ Stock Group: "Men's Shirts"
 Is "Blue Mountain" a color or a design name? Is "40" a size or a price? Is "PT" an abbreviation? Welcome to real-world garment data.
 
 :::danger
-Name parsing alone is unreliable for matrix reconstruction. Always use the Stock Group hierarchy as the primary design boundary, and treat name parsing as secondary confirmation. See [Variant Detection](/tally-integartion/vertical-garments/variant-detection/) for the recommended algorithm.
+Name parsing alone is unreliable for matrix reconstruction. Always use the Stock Group hierarchy as the primary design boundary, and treat name parsing as secondary confirmation. See [Variant Detection](/tally-integration/vertical-garments/variant-detection/) for the recommended algorithm.
 :::
 
 ## The "Assorted" Wrench
@@ -25684,7 +25684,7 @@ def detect_variants(items_by_group):
 
 Parsing relies on comprehensive token dictionaries:
 
-**Size tokens** (see [Size Tokens](/tally-integartion/vertical-garments/size-tokens/)):
+**Size tokens** (see [Size Tokens](/tally-integration/vertical-garments/size-tokens/)):
 ```
 Letter: XS, S, M, L, XL, XXL, 2XL-5XL
 Numeric: 26-48 (waist/chest)
@@ -25692,7 +25692,7 @@ Kids: 1-2Y, 2-3Y, ... 12-14Y
 Special: FS, Free Size, One Size
 ```
 
-**Color tokens** (see [Color Tokens](/tally-integartion/vertical-garments/color-tokens/)):
+**Color tokens** (see [Color Tokens](/tally-integration/vertical-garments/color-tokens/)):
 ```
 Full: Black, Blue, Red, Navy, Maroon...
 Abbreviated: BLK, BLU, RED, NVY, MRN...
@@ -25936,7 +25936,7 @@ For every batch allocation in every voucher, extract:
 | Amount | `AMOUNT` | `amount` |
 
 :::caution
-The `ACTUALQTY` field contains the unit embedded in the string (e.g., "100 Strip"). You need to parse out the numeric value. See the [parsing quantities](/tally-integartion/parsing-responses/parsing-quantities/) section for details on quantity string parsing.
+The `ACTUALQTY` field contains the unit embedded in the string (e.g., "100 Strip"). You need to parse out the numeric value. See the [parsing quantities](/tally-integration/parsing-responses/parsing-quantities/) section for details on quantity string parsing.
 :::
 
 ## Edge Cases to Watch
@@ -27388,7 +27388,7 @@ Tally's name matching is **case-sensitive** for import operations. "raj medical"
 :::
 
 **If it doesn't exist**: You have two options:
-1. Auto-create the ledger first (see [Auto-Create Masters](/tally-integartion/write-back/auto-create-masters/))
+1. Auto-create the ledger first (see [Auto-Create Masters](/tally-integration/write-back/auto-create-masters/))
 2. Reject the order and ask the sales rep to pick from a known list
 
 ### 2. Stock Item Names Match Exactly
@@ -27482,7 +27482,7 @@ Party amount (debit, negative)
 
 If your app calculates GST at 18% on Rs 10,000 and gets Rs 1,800.00, but Tally's ledger expects the tax on individual line items (which might round differently), you'll get a mismatch.
 
-See [Round-Off Handling](/tally-integartion/write-back/round-off-handling/) for the fix.
+See [Round-Off Handling](/tally-integration/write-back/round-off-handling/) for the fix.
 
 ### 7. Batch Allocations Match Quantities
 
@@ -27582,7 +27582,7 @@ For party ledgers, you have a choice: auto-create missing parties or reject the 
 - The sales app didn't collect required fields
 - You want human review before adding parties to Tally
 
-See [Auto-Create Masters](/tally-integartion/write-back/auto-create-masters/) for the full auto-creation workflow.
+See [Auto-Create Masters](/tally-integration/write-back/auto-create-masters/) for the full auto-creation workflow.
 
 ---
 
@@ -27890,7 +27890,7 @@ The `VOUCHER` element has three critical attributes:
 
 - **DATE**: Format is `YYYYMMDD`. No dashes, no slashes.
 - **VOUCHERTYPENAME**: Must match exactly. If the stockist uses a custom type like "Field Sales Order", use that instead.
-- **VOUCHERNUMBER**: Your unique reference. Use a prefix to avoid collisions (see [Voucher Numbering](/tally-integartion/write-back/voucher-numbering/)).
+- **VOUCHERNUMBER**: Your unique reference. Use a prefix to avoid collisions (see [Voucher Numbering](/tally-integration/write-back/voucher-numbering/)).
 - **PARTYLEDGERNAME**: The customer's ledger name. Must exist in Tally. Case-sensitive.
 - **NARRATION**: Free text. Great for audit trails.
 
@@ -27960,7 +27960,7 @@ Tax (Cr)    = + 1,800.00
 Total        =      0.00  <-- MUST be zero
 ```
 
-If this doesn't balance to the **paisa**, Tally rejects the voucher with "Voucher totals do not match!" See [Round-Off Handling](/tally-integartion/write-back/round-off-handling/) for dealing with rounding differences.
+If this doesn't balance to the **paisa**, Tally rejects the voucher with "Voucher totals do not match!" See [Round-Off Handling](/tally-integration/write-back/round-off-handling/) for dealing with rounding differences.
 
 ## Inventory Entries
 
@@ -28169,9 +28169,9 @@ Before using this template, replace **every** name (company, party, stock items,
 
 ## Next Steps
 
-- [Voucher Lifecycle](/tally-integartion/write-back/voucher-lifecycle/) -- how to alter, cancel, and delete vouchers after creation
-- [Pre-Validation](/tally-integartion/write-back/pre-validation/) -- the checklist to run before every push
-- [Import Response](/tally-integartion/write-back/import-response/) -- parsing Tally's response to confirm success
+- [Voucher Lifecycle](/tally-integration/write-back/voucher-lifecycle/) -- how to alter, cancel, and delete vouchers after creation
+- [Pre-Validation](/tally-integration/write-back/pre-validation/) -- the checklist to run before every push
+- [Import Response](/tally-integration/write-back/import-response/) -- parsing Tally's response to confirm success
 
 ---
 
@@ -28198,7 +28198,7 @@ graph TD
 
 ## Create: ACTION="Create"
 
-This is the starting point. You've already seen this in the [Sales Order XML](/tally-integartion/write-back/sales-order-xml/) page.
+This is the starting point. You've already seen this in the [Sales Order XML](/tally-integration/write-back/sales-order-xml/) page.
 
 ```xml
 <VOUCHER VCHTYPE="Sales Order"
@@ -28351,7 +28351,7 @@ Track the voucher state in your local database:
 | Cancel | `ALTERED=1` | Treated as alter internally |
 | Delete | `DELETED=1` | GUID now invalid |
 
-See [Import Response](/tally-integartion/write-back/import-response/) for full details on parsing these responses.
+See [Import Response](/tally-integration/write-back/import-response/) for full details on parsing these responses.
 
 ## Common Pitfalls
 
@@ -28675,7 +28675,7 @@ graph TD
 
 ## Next Steps
 
-Ready to build the actual XML? Head to [Sales Order XML](/tally-integartion/write-back/sales-order-xml/) for the complete template and line-by-line walkthrough.
+Ready to build the actual XML? Head to [Sales Order XML](/tally-integration/write-back/sales-order-xml/) for the complete template and line-by-line walkthrough.
 
 ---
 
@@ -28969,7 +28969,7 @@ full_reconcile_interval = "24h"
 
 ## What is Next
 
-You now have a complete picture of the XML protocol — all five request types, inline TDL, and batching strategies. Head back to the [Request Types overview](/tally-integartion/xml-protocol/request-types/) to review, or dive into building your connector.
+You now have a complete picture of the XML protocol — all five request types, inline TDL, and batching strategies. Head back to the [Request Types overview](/tally-integration/xml-protocol/request-types/) to review, or dive into building your connector.
 
 ---
 
@@ -29064,7 +29064,7 @@ If you are building a connector that needs to work on any stockist's machine wit
 
 One compelling use of TDL actions is building a push-based sync model. Instead of polling Tally for changes, you install a TDL that fires an action whenever a voucher is saved. That action calls back to your connector via HTTP.
 
-However, this requires a TDL file to be loaded on the stockist's machine — which may not always be feasible. For most integrations, the polling approach (using `$$MaxVoucherAlterID` from [Export/Function](/tally-integartion/xml-protocol/export-function/)) is simpler and works without any TDL installation.
+However, this requires a TDL file to be loaded on the stockist's machine — which may not always be feasible. For most integrations, the polling approach (using `$$MaxVoucherAlterID` from [Export/Function](/tally-integration/xml-protocol/export-function/)) is simpler and works without any TDL installation.
 
 ## Response Format
 
@@ -29094,7 +29094,7 @@ Or in case of an error:
 
 ## What is Next
 
-Now that you have seen all five request types, it is time to learn the real superpower — embedding TDL definitions directly in your XML requests, so you never need to install TDL files on the stockist's machine. Head to [Inline TDL](/tally-integartion/xml-protocol/inline-tdl/).
+Now that you have seen all five request types, it is time to learn the real superpower — embedding TDL definitions directly in your XML requests, so you never need to install TDL files on the stockist's machine. Head to [Inline TDL](/tally-integration/xml-protocol/inline-tdl/).
 
 ---
 
@@ -29407,7 +29407,7 @@ You will see both `FETCH` and `NATIVEMETHOD` used in collection definitions. The
 | `FETCH` | Fetches fields and resolves sub-objects (like `GSTDetails.List`) |
 | `NATIVEMETHOD` | Fetches native (built-in) methods/properties of the object |
 
-In practice, `FETCH` is the simpler choice. Use `NATIVEMETHOD` when you need more control over which specific native properties to include. See the [Inline TDL](/tally-integartion/xml-protocol/inline-tdl/) page for the full breakdown.
+In practice, `FETCH` is the simpler choice. Use `NATIVEMETHOD` when you need more control over which specific native properties to include. See the [Inline TDL](/tally-integration/xml-protocol/inline-tdl/) page for the full breakdown.
 
 ## ISMODIFY Attribute
 
@@ -29431,11 +29431,11 @@ If a company has thousands of stock items or tens of thousands of vouchers, a si
 - ~5,000 objects per collection export
 - Day-by-day batching for vouchers in large companies
 
-See [Batching Rules](/tally-integartion/xml-protocol/batching-rules/) for strategies on breaking large exports into manageable chunks.
+See [Batching Rules](/tally-integration/xml-protocol/batching-rules/) for strategies on breaking large exports into manageable chunks.
 
 ## What is Next
 
-Collections give you lists of objects. But what if you just need a quick yes/no answer or a single number? That is what [Export/Function](/tally-integartion/xml-protocol/export-function/) is for.
+Collections give you lists of objects. But what if you just need a quick yes/no answer or a single number? That is what [Export/Function](/tally-integration/xml-protocol/export-function/) is for.
 
 ---
 
@@ -29642,7 +29642,7 @@ The Daybook gives you all vouchers within a date range:
 ```
 
 :::danger
-For large companies, pulling the full Daybook in one shot can freeze Tally. Use day-by-day batching for companies with more than a few thousand vouchers per month. See [Batching Rules](/tally-integartion/xml-protocol/batching-rules/) for details.
+For large companies, pulling the full Daybook in one shot can freeze Tally. Use day-by-day batching for companies with more than a few thousand vouchers per month. See [Batching Rules](/tally-integration/xml-protocol/batching-rules/) for details.
 :::
 
 ## CMPINFO Tags in Responses
@@ -29943,7 +29943,7 @@ These calls are cheap — they return a single value with no heavy computation. 
 
 ## What is Next
 
-You now know how to read from Tally in three different ways. Time to flip the script and learn how to **write data into Tally** with [Import/Data](/tally-integartion/xml-protocol/import-data/).
+You now know how to read from Tally in three different ways. Time to flip the script and learn how to **write data into Tally** with [Import/Data](/tally-integration/xml-protocol/import-data/).
 
 ---
 
@@ -30314,7 +30314,7 @@ For Alter, Cancel, and Delete, include identifying tags:
 
 ## What is Next
 
-Import/Data covers most write scenarios. For the rare case where you need to trigger an internal Tally action, see [Execute/TDLAction](/tally-integartion/xml-protocol/execute-action/).
+Import/Data covers most write scenarios. For the rare case where you need to trigger an internal Tally action, see [Execute/TDLAction](/tally-integration/xml-protocol/execute-action/).
 
 ---
 
@@ -30728,7 +30728,7 @@ For large datasets, combine inline TDL filters with date-range batching. Filter 
 
 ## What is Next
 
-You have the power of inline TDL. Now learn how to use it responsibly at scale — see [Batching Rules](/tally-integartion/xml-protocol/batching-rules/) for the limits and strategies that keep Tally happy when you are pulling or pushing large volumes of data.
+You have the power of inline TDL. Now learn how to use it responsibly at scale — see [Batching Rules](/tally-integration/xml-protocol/batching-rules/) for the limits and strategies that keep Tally happy when you are pulling or pushing large volumes of data.
 
 ---
 

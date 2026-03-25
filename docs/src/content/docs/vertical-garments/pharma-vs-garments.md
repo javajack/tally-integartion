@@ -32,7 +32,7 @@ If you're building a connector that handles both pharma and garment companies, t
 | Complexity | Low (look up HSN) | High (compute per line item) |
 
 :::danger
-This is the single biggest technical difference. Pharma GST is a simple lookup. Garment GST requires per-line computation based on selling price. See [Price-Dependent GST](/tally-integartion/gst-compliance/price-dependent-gst/).
+This is the single biggest technical difference. Pharma GST is a simple lookup. Garment GST requires per-line computation based on selling price. See [Price-Dependent GST](/tally-integration/gst-compliance/price-dependent-gst/).
 :::
 
 ### 4. Seasonality

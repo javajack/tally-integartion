@@ -408,4 +408,4 @@ For large datasets, combine inline TDL filters with date-range batching. Filter 
 
 ## What is Next
 
-You have the power of inline TDL. Now learn how to use it responsibly at scale — see [Batching Rules](/tally-integartion/xml-protocol/batching-rules/) for the limits and strategies that keep Tally happy when you are pulling or pushing large volumes of data.
+You have the power of inline TDL. Now learn how to use it responsibly at scale — see [Batching Rules](/tally-integration/xml-protocol/batching-rules/) for the limits and strategies that keep Tally happy when you are pulling or pushing large volumes of data.

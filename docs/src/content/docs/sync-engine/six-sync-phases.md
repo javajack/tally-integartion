@@ -117,7 +117,7 @@ Masters MUST complete before Vouchers. Vouchers reference masters by name (ledge
 | Voucher references unknown master | Log warning, store voucher anyway, flag for reconciliation |
 | XML parse error on specific voucher | Skip voucher, log error, continue with next batch |
 
-This is the heaviest phase. For large companies, see [Batching Strategies](/tally-integartion/sync-engine/batching-strategies/) for how to break it into manageable chunks.
+This is the heaviest phase. For large companies, see [Batching Strategies](/tally-integration/sync-engine/batching-strategies/) for how to break it into manageable chunks.
 
 ---
 
@@ -142,7 +142,7 @@ This is the heaviest phase. For large companies, see [Batching Strategies](/tall
 **Why not just compute from vouchers?**
 
 :::danger
-**Never compute stock position from vouchers.** Tally's Stock Summary accounts for opening balances, valuation methods (FIFO, LIFO, Weighted Average), corrections, and adjustments that your voucher-based computation will miss. See [Stock Position Truth](/tally-integartion/sync-engine/stock-position-truth/) for the full explanation.
+**Never compute stock position from vouchers.** Tally's Stock Summary accounts for opening balances, valuation methods (FIFO, LIFO, Weighted Average), corrections, and adjustments that your voucher-based computation will miss. See [Stock Position Truth](/tally-integration/sync-engine/stock-position-truth/) for the full explanation.
 :::
 
 **Error handling**:
@@ -180,7 +180,7 @@ This is the heaviest phase. For large companies, see [Batching Strategies](/tall
 | Central API rejects payload | Log error, mark as failed, alert |
 | Tally rejects write-back | Parse error response, log, retry with adjusted XML |
 
-See [Push Queue](/tally-integartion/sync-engine/push-queue/) for the full queue implementation.
+See [Push Queue](/tally-integration/sync-engine/push-queue/) for the full queue implementation.
 
 ---
 

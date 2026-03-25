@@ -32,7 +32,7 @@ curl: (7) Failed to connect to
 2. Is the HTTP server enabled? (F1 > Settings > Connectivity)
 3. Did you restart Tally after enabling HTTP?
 4. Is the port correct? (Check `tally.ini`)
-5. Is another app using port 9000? (See [Port Conflicts](/tally-integartion/setup-operations/port-conflicts/))
+5. Is another app using port 9000? (See [Port Conflicts](/tally-integration/setup-operations/port-conflicts/))
 
 ### Connection Timeout
 
@@ -240,7 +240,7 @@ match accounting entries
 
 The sum of inventory line amounts doesn't equal the accounting allocation. Common when GST rounding creates tiny differences.
 
-**Fix:** Add a round-off entry (see the [research notes on round-off handling](/tally-integartion/setup-operations/troubleshooting-errors/#the-round-off-fix)).
+**Fix:** Add a round-off entry (see the [research notes on round-off handling](/tally-integration/setup-operations/troubleshooting-errors/#the-round-off-fix)).
 
 #### The Round-Off Fix
 
